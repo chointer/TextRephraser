@@ -1,10 +1,13 @@
 import ollama
 import json
+import os
 
 class Rephrase:
     def __init__(self, verbose=False) -> None:
         ollama.pull("llama3.2")
-        with open("config.json", "r") as f:
+
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        with open(os.path.join(current_dir, "config.json"), "r") as f:
             self.prompts = json.load(f)
         self.verbose = verbose
 

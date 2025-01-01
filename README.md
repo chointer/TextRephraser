@@ -18,4 +18,23 @@ _\* Eysenbach, Benjamin, et al. "Diversity is all you need: Learning skills with
   cd TextRephraser
   pip install -r requirments.txt
   ```
-  
+<br/>
+
+## Usage - Rephraser
+  ```python
+  from RephraseText import Rephrase
+
+  # Initialize
+  rephrase = Rephrase()
+
+  # Input and setup
+  input_prompt = "I found a book in his dark room."
+  style = "narrative"      # Choose from "narrative", "emotional", "objective"
+  length = "compress"      # Choose from "compress", "maintain", "expand"
+
+  # Perform rephrasing
+  output = rephrase(input_prompt, style, length)
+  ```
+<br/>
+
+##  Usage - Video Generation with Rephrasing

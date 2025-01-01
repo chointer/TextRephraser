@@ -18,6 +18,13 @@ _\* Eysenbach, Benjamin, et al. "Diversity is all you need: Learning skills with
   cd TextRephraser
   pip install -r requirments.txt
   ```
+
+If you want to generate vidoes with the rephraser, clone the [ToonCrafter](https://github.com/Doubiiu/ToonCrafter) GitHub repository. Download the pretrained model and put the `model.ckpt` in `checkpoints/tooncrafter_512_interp_v1/model.ckpt`. See the _Setup_ and _Inference_ sections of the ToonCrafter [README.md](https://github.com/Doubiiu/ToonCrafter/blob/main/README.md).
+  ```bash
+  git clone https://github.com/Doubiiu/ToonCrafter.git
+  cd ToonCrafter
+  pip install -r requirments.txt
+  ```
 <br/>
 
 ## Usage - Rephraser
@@ -38,3 +45,9 @@ _\* Eysenbach, Benjamin, et al. "Diversity is all you need: Learning skills with
 <br/>
 
 ##  Usage - Video Generation with Rephrasing
+- Place the first and last frames in `inference/`.
+- Set the input prompt and parameters in the `run_ToonCrafter_with_Rephrase.py` file.
+- Run the script by excuting the following command:
+  `$ python run_ToonCrafter_with_Rephrase.py`
+
+_\* **Note**: This section is not perfect. I couldn't test it due to the lack of a GPU._

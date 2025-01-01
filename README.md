@@ -15,6 +15,7 @@ _\* Eysenbach, Benjamin, et al. "Diversity is all you need: Learning skills with
   conda create -n rephraser python=3.10
   conda activate rephraser
   git clone https://github.com/chointer/TextRephraser.git
+  cd TextRephraser
   pip install -r requirments.txt
   ```
   

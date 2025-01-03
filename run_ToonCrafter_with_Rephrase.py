@@ -9,7 +9,6 @@ rank_of_gpu = 0
 
 # inputs
 input_text = ""
-input_image_pair = [None, None]
 
 # params - rephrase
 save_txt_path = "temp/rephrase.txt"
